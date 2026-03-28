@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <form id="calculator-form">
+            <input type="number" id="num1" placeholder="Enter first number" required>
+            <input type="number" id="num2" placeholder="Enter second number" required>
+            <select id="operation" required>
+                <option value="">Select Operation</option>
+                <option value="sum">Sum</option>
+                <option value="product">Product</option>
+                <option value="difference">Difference</option>
+                <option value="remainder">Remainder</option>
+                <option value="quotient">Quotient</option>
+                <option value="power">Power</option>
+                <option value="sqrt">Square Root</option>
+                <option value="square">Square</option>
+            </select>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
