@@ -1,0 +1,34 @@
+/* The Container handles the layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* CRITICAL: Allows boxes to drop to next line on mobile */
+    justify-content: center;
+    gap: 20px; /* Modern way to add space between boxes */
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* Common styles for all boxes */
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;    /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    font-weight: bold;
+}
+
+.box1 { background-color: aqua; }
+.box2 { background-color: rgb(229, 71, 71); color: white; }
+.box3 { background-color: darkseagreen; }
+.box4 { background-color: blue; color: white; }
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stacks boxes vertically on small screens */
+        align-items: center;
+        background-color: red; /* Visual indicator that mobile view is active */
+    }
+}
