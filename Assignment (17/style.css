@@ -1,0 +1,100 @@
+/* General Layout & Typography */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+    max-width: 850px; 
+    margin: 40px auto; 
+    padding: 40px; 
+    background-color: #f4f7f6; /* Subtle background color */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Paper effect */
+}
+
+/* Header Section */
+h1 { 
+    border-left: 5px solid #2980b9; /* Professional accent bar */
+    padding-left: 15px;
+    color: #2c3e50; 
+    margin-bottom: 5px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 { 
+    color: #7f8c8d; 
+    margin-top: 0; 
+    font-size: 1.1em; 
+    font-weight: 400; 
+    margin-left: 20px;
+}
+
+h3 { 
+    border-bottom: 2px solid #2980b9; 
+    color: #2c3e50; 
+    text-transform: uppercase; 
+    font-size: 1rem; 
+    margin-top: 30px; 
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Info */
+.contact-info { 
+    margin-bottom: 25px; 
+    font-size: 0.95em; 
+    color: #555;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+}
+
+/* Projects & Education */
+.project-title, .edu-item b { 
+    font-weight: 600; 
+    color: #2c3e50;
+    font-size: 1.05em;
+}
+
+.date { 
+    float: right; 
+    color: #95a5a6; 
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+/* Interactive Skills Tags */
+.skills-list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    list-style: none; 
+    padding: 0; 
+    gap: 8px;
+}
+
+.skills-list li { 
+    background: #2980b9; 
+    color: white;
+    padding: 6px 12px; 
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.85em; 
+    transition: transform 0.2s, background 0.2s;
+    cursor: default;
+}
+
+.skills-list li:hover { 
+    background: #3498db; 
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Layout Helper */
+.edu-item { 
+    margin-bottom: 20px; 
+    position: relative;
+}
+
+/* Clearfix for floats */
+.edu-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
