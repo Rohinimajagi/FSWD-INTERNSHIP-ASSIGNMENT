@@ -1,0 +1,53 @@
+.weather-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); /* Glass effect */
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.temp-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.refresh-btn {
+  background: white;
+  color: #4facfe;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.refresh-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Loading Spinner Style */
+.loader {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4facfe;
+}
